@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="20014cb2-a940-491c-9d7f-1949f058f2d3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1cda370H1Cxr0wBkyheVL6BTgKz" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showModules" value="false" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager" selected="Gradle.AdminItems.adminItems">
+    <configuration name="AdminItems" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;AdminItems&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AdminItems.adminItems" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;AdminItems.adminItems&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.AdminItems.adminItems" />
+        <item itemvalue="Gradle.AdminItems" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="20014cb2-a940-491c-9d7f-1949f058f2d3" name="Default Changelist" comment="" />
+      <created>1590860722461</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590860722461</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="654" y="280" width="646" height="469" key="#Notifications" timestamp="1590860804558">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="654" y="280" width="646" height="469" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1590860804558" />
+    <state x="93" y="93" width="1350" height="648" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1591456747392">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="93" y="93" width="1350" height="648" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.834@0.0.1536.834" timestamp="1591456747392" />
+    <state x="449" y="153" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1591418547546">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="449" y="153" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.834@0.0.1536.834" timestamp="1591418547546" />
+    <state x="625" y="372" width="756" height="437" key="#xdebugger.evaluate" timestamp="1591460580480">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="625" y="372" width="756" height="437" key="#xdebugger.evaluate/0.0.1536.834@0.0.1536.834" timestamp="1591460580480" />
+    <state width="443" height="438" key="DebuggerActiveHint" timestamp="1591461750473">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="443" height="438" key="DebuggerActiveHint/0.0.1536.834@0.0.1536.834" timestamp="1591461750473" />
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1591462744238">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1591462744238" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1591462744238">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1591462744238" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1591462744238">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1591462744238" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1591462744238">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1591462744238" />
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1591461827537">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1591461827537" />
+    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1591461827537">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1591461827537" />
+    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1591461827537">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1591461827537" />
+    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1591461827537">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1591461827537" />
+    <state x="498" y="309" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1591420102705">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="498" y="309" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.834@0.0.1536.834" timestamp="1591420102705" />
+    <state x="425" y="189" key="run.anything.popup" timestamp="1591456735805">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1591456735805" />
+  </component>
+</project>
