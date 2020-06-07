@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class StickerForItems {
 
     public WebDriver driver;
@@ -26,15 +28,15 @@ public class StickerForItems {
     public void stickersTest() {
         driver.get("http://localhost/litecart");
 
-        String productXpathLocator = "//div[contains(@class, 'image')]";
-        String stickerXpathLocator = "//div[contains(@class, 'sticker')]";
+        String productCSSLocator = ".product";
+        String stickerCSSLocator = ".sticker";
 
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(productXpathLocator)));
-        List<WebElement> products = driver.findElements(By.xpath(productXpathLocator));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(productCSSLocator)));
+        List<WebElement> products = driver.findElements(By.cssSelector(productCSSLocator));
 
-        for (int i = 1; i <= products.size(); i++) {
-            driver.findElement(By.xpath("(" + productXpathLocator + stickerXpathLocator + ")" + "[" + i + "]"));
-            System.out.println("(" + productXpathLocator + stickerXpathLocator + ")" + "[" + i + "]");
+        for (WebElement webElement : products) {
+            List<WebElement> stickers = webElement.findElements(By.cssSelector(stickerCSSLocator));
+            assertTrue(stickers.size() == 1);
         }
 
     }
