@@ -36,13 +36,15 @@ public class ProductPageTest {
         String regularPriceColorOnMainPage = product.findElement(By.cssSelector(".regular-price")).getCssValue("color").replaceAll("[A-Za-z-(-)- -]+", "");
         String[] rgbRegularPriceColorOnMainPage = regularPriceColorOnMainPage.split(",", 4);
         assertEquals(rgbRegularPriceColorOnMainPage[0], rgbRegularPriceColorOnMainPage[1], "the color should be gray");
+        assertEquals(rgbRegularPriceColorOnMainPage[0], rgbRegularPriceColorOnMainPage[2], "the color should be gray");
         assertEquals(rgbRegularPriceColorOnMainPage[1], rgbRegularPriceColorOnMainPage[2], "the color should be gray");
 
         // Check styles of campaign price
         product.findElement(By.cssSelector(".campaign-price")).getCssValue("font-weight").equals("700");
         String campaignPriceColorOnMainPage = product.findElement(By.cssSelector(".campaign-price")).getCssValue("color").replaceAll("[A-Za-z-(-)- -]+", "");
         String[] rgbCampaignPriceColorOnMainPage = campaignPriceColorOnMainPage.split(",", 4);
-        assertEquals(rgbCampaignPriceColorOnMainPage[1], rgbCampaignPriceColorOnMainPage[2], "the color should be red");
+        assertEquals("0", rgbCampaignPriceColorOnMainPage[1], "the color should be red");
+        assertEquals("0", rgbCampaignPriceColorOnMainPage[2], "the color should be red");
 
         // Check regular price is bigger than campaign
         double regularPriceFontSizeOnMainPage = Double.parseDouble(product.findElement(By.cssSelector(".regular-price")).getCssValue("font-size").replaceAll("[A-Za-z]", ""));
@@ -68,13 +70,15 @@ public class ProductPageTest {
         String regularPriceColorOnProductPage = driver.findElement(By.cssSelector(".regular-price")).getCssValue("color").replaceAll("[A-Za-z-(-)- -]+", "");
         String[] rgbRegularPriceColorOnProductPage = regularPriceColorOnProductPage.split(",", 4);
         assertEquals(rgbRegularPriceColorOnProductPage[0], rgbRegularPriceColorOnProductPage[1], "the color should be gray");
+        assertEquals(rgbRegularPriceColorOnProductPage[0], rgbRegularPriceColorOnProductPage[2], "the color should be gray");
         assertEquals(rgbRegularPriceColorOnProductPage[1], rgbRegularPriceColorOnProductPage[2], "the color should be gray");
 
         // Check styles of campaign price
         driver.findElement(By.cssSelector(".campaign-price")).getCssValue("font-weight").equals("700");
         String campaignPriceColorOnProductPage = driver.findElement(By.cssSelector(".campaign-price")).getCssValue("color").replaceAll("[A-Za-z-(-)- -]+", "");
         String[] rgbCampaignPriceColorOnProductPage = campaignPriceColorOnProductPage.split(",", 4);
-        assertEquals(rgbCampaignPriceColorOnProductPage[1], rgbCampaignPriceColorOnProductPage[2], "the color should be red");
+        assertEquals("0", rgbCampaignPriceColorOnProductPage[1], "the color should be red");
+        assertEquals("0", rgbCampaignPriceColorOnProductPage[2], "the color should be red");
     }
 
 
