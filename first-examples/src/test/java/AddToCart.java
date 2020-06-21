@@ -2,7 +2,9 @@ import org.junit.jupiter.api.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.*;
+
 import java.util.List;
+
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class AddToCart {
@@ -20,42 +22,20 @@ public class AddToCart {
 
     @Test
     public void addToCart() throws InterruptedException {
-        // 1st
-        driver.findElement(By.cssSelector(".product")).click();
-        int cartItemsCount = Integer.parseInt(driver.findElement(By.cssSelector(".quantity")).getText());
 
-        if (driver.findElements(By.cssSelector("[name = 'options[Size]']")).size() > 0) {
-            driver.findElement(By.cssSelector("[name = 'options[Size]']")).click();
-            driver.findElement(By.cssSelector("[value= 'Medium']")).click();
+        for (int i = 0; i < 3; i++) {
+            driver.findElement(By.cssSelector(".product")).click();
+            int cartItemsCount = Integer.parseInt(driver.findElement(By.cssSelector(".quantity")).getText());
+
+            if (driver.findElements(By.cssSelector("[name = 'options[Size]']")).size() > 0) {
+                driver.findElement(By.cssSelector("[name = 'options[Size]']")).click();
+                driver.findElement(By.cssSelector("[value= 'Medium']")).click();
+            }
+            driver.findElement(By.cssSelector("[name = 'add_cart_product']")).click();
+            wait.until(textToBe(By.cssSelector(".quantity"), cartItemsCount + 1 + ""));
+
+            driver.navigate().back();
         }
-        driver.findElement(By.cssSelector("[name = 'add_cart_product']")).click();
-        wait.until(textToBe(By.cssSelector(".quantity"), cartItemsCount + 1 + ""));
-
-        driver.navigate().back();
-
-        // 2nd
-        driver.findElement(By.cssSelector(".product")).click();
-        cartItemsCount = Integer.parseInt(driver.findElement(By.cssSelector(".quantity")).getText());
-
-        if (driver.findElements(By.cssSelector("[name = 'options[Size]']")).size() > 0) {
-            driver.findElement(By.cssSelector("[name = 'options[Size]']")).click();
-            driver.findElement(By.cssSelector("[value= 'Medium']")).click();
-        }
-        driver.findElement(By.cssSelector("[name = 'add_cart_product']")).click();
-        wait.until(textToBe(By.cssSelector(".quantity"), cartItemsCount + 1 + ""));
-
-        driver.navigate().back();
-
-        // 3rd
-        driver.findElement(By.cssSelector(".product")).click();
-        cartItemsCount = Integer.parseInt(driver.findElement(By.cssSelector(".quantity")).getText());
-
-        if (driver.findElements(By.cssSelector("[name = 'options[Size]']")).size() > 0) {
-            driver.findElement(By.cssSelector("[name = 'options[Size]']")).click();
-            driver.findElement(By.cssSelector("[value= 'Medium']")).click();
-        }
-        driver.findElement(By.cssSelector("[name = 'add_cart_product']")).click();
-        wait.until(textToBe(By.cssSelector(".quantity"), cartItemsCount + 1 + ""));
 
         driver.findElement(By.cssSelector("[href $= 'checkout'].link")).click();
         wait.until(presenceOfElementLocated(By.cssSelector("[name = 'remove_cart_item']")));
@@ -63,7 +43,7 @@ public class AddToCart {
         List<WebElement> shortcuts = wait.until(presenceOfAllElementsLocatedBy(By.cssSelector("li.shortcut")));
         Thread.sleep(1000);
 
-        for (int i = shortcuts.size() - 1; i  >= 0 ; i--) {
+        for (int i = shortcuts.size() - 1; i >= 0; i--) {
             List<WebElement> itemsTable = driver.findElements(By.cssSelector(".dataTable .item"));
             if (i > 0) {
                 driver.findElement(By.cssSelector("li.shortcut")).click();
